@@ -19,7 +19,7 @@ exports.feedback_create = function(req,res) {
             {
                 //res.send(data)
                 
-                res.redirect('/');
+                res.redirect('/home');  /*change*/
             })
             .catch(err=>
                 {

@@ -1,7 +1,7 @@
 const axios = require('axios');
 exports.homeRoutes=(req,res)=>
 {
-    axios.get('http://localhost:8081/feedback_find')
+    axios.get('https://coffeeadda.herokuapp.com/feedback_find')
     .then(function(response){ 
         res.render('index1',{feedback:response.data});
     })
@@ -12,7 +12,7 @@ exports.homeRoutes=(req,res)=>
 
 exports.orderRoutes=(req,res)=>
 {
-    axios.get('http://localhost:8081/menu_find')
+    axios.get('https://coffeeadda.herokuapp.com/menu_find')
     .then(function(response){ 
         res.render('menu',{product:response.data});
     })
@@ -23,7 +23,7 @@ exports.orderRoutes=(req,res)=>
 
 exports.galleryRoutes=async(req,res)=>
 {
-    axios.get('http://localhost:8081/gallery_find')
+    axios.get('https://coffeeadda.herokuapp.com/gallery_find')
     .then(function(response){ 
         res.render('gallery',{feedback:response.data});
     })

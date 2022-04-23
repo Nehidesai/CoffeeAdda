@@ -1,0 +1,19 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <div style="display:flex; margin-left: 100px;">
+        <% for(var i = 0; i < feedback.length; i++) { %>
+            
+            
+                <div style="box-shadow: 0px 0px 5px 5px #4A2C2A; ">
+                
+                <p style="font-family:'Charm',cursive; text-transform: capitalize; text-align: center;"><%= feedback[i].cust_name %></p>
+                <p style="font-family:'Dancing Script',cursive; text-transform: capitalize; text-align: center;"><%= feedback[i].fb_desc %></p>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                
+            <% } %>
+        </div>

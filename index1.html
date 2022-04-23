@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#header').load('header1.html');
+        });
+        $(function () {
+            $('#footer').load('footer.html');
+        });
+        $(function () {
+            $('#section1').load('AboutUs.html');
+        });
+    </script>
+    <title>Document</title>
+    <!-- <style>
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.coffee {
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    color: #d7d7d7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.coffeetagline {
+    position: absolute;
+    top: 320px;
+    right: 100px;
+    color: #d7d7d7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.wallpaper {
+    height: 600px;
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.50em);
+}
+body {
+    margin: 0;
+    background-color: #b38867;    
+}
+
+/*LOGO*/
+.logo {
+    height: 120px;
+    width: 150px;
+}
+
+    </style> -->
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- <hr> -->
+    <div class="container">
+        <img src="./images/coffee6.jpg" class="wallpaper">
+        <div class="coffee">The Coffee Adda</div>
+        <div class="coffeetagline">The finest coffees, shakes and snacks adda</div>
+    </div>
+    <hr>
+
+    <div>
+        <div id="section1"></div>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <!-- <h1>MENU</h1> -->
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <center><span class="heading-primary-main">MENU</span></center>
+                <!-- <span class="heading-primary-sub">world wide web</span> -->
+            </h1>
+        </div>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsam pariatur doloremque labore
+            dolorem ipsum debitis corrupti nisi porro reiciendis error molestias perspiciatis voluptatibus tempore a,
+            delectus, natus quo! Iure.</p>
+        <center><button class="raise" onclick="myFunction()">Explore Menu</button></center>
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h1>FEEDBACK</h1>
+    </div>
+
+    <div>
+        <div id="footer"></div>
+    </div>
+    <script>
+        function myFunction() {
+            location.replace("menu.html")
+        }
+    </script>
+   
+
+</body>
+
+</html>

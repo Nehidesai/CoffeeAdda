@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#header').load('header1.html');
+        });
+        $(function () {
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <title>Feedback</title>
+    
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>
+        <h1>
+            <center>Feedback</center>
+        </h1>
+        <hr>
+        <center>
+            <p>Kindly give us your valuable feedack.</p>
+        </center>
+    </div>
+    <center>
+        <div class="fb-box">
+            <br><br>
+            <label>Name </label><input type="text">
+            <p style="font-size:larger">How would you rate our Cafe?</p>
+            <span class="star-rating">
+                <input type="radio" name="rating1" value="1"><i></i>
+                <input type="radio" name="rating1" value="2"><i></i>
+                <input type="radio" name="rating1" value="3"><i></i>
+                <input type="radio" name="rating1" value="4"><i></i>
+                <input type="radio" name="rating1" value="5"><i></i>
+              </span>
+              
+
+            <p style="font-size:larger">Would you like to add some comments?</p>
+            <textarea name="" id="" cols="50" rows="5">Add Your Text Here!</textarea><br><br>
+
+        </div>
+        <br><br>
+        <button class="raise">Submit Feedback</button>
+    </center>
+    <br><br>
+    <div id="footer"></div>
+</body>
+
+</html>

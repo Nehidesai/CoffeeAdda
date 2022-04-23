@@ -1,0 +1,62 @@
+<!-- LEFT FOR INTERNAL CSS -->
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <title>Coffee Adda</title>
+
+</head>
+
+<body>
+  <%- include('include/_header')%>
+    <strong>
+      <h1 style="text-align:center;font-family: 'Charm', cursive;">Our Menu</h1>
+    </strong>
+    <hr style="border: solid 1px brown;">
+    <p style="text-align: center; font-size: large; font-family: 'Charm', cursive; ">Explore Our Hot and Cold Beverges Menu</p>
+    
+                
+                  <form action="/calculate_bill" method="POST"> 
+                <% for(var i = 0; i < product.length; i++) { %>
+                  
+                      <div class="menustyle" style="display:flex;">
+                  
+                          <div class="menuimage">
+                          <center>
+                                  <% var img = product[i].product_img %>
+                                   <img src="<%= img %>" style="width:400px; height:80%; margin-top:30px; margin-left: 10px;"> 
+                                  <!-- <img class="imaage" src="https://baristajoy.com/wp-content/uploads/2021/11/espresso-expresso.png " style="height:300px;width: 300px"> -->
+                          </center>
+                  
+                          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <div class="menudetails" >
+                                  <h1><%= product[i].product_name %></h1>
+                                  <p><%= product[i].product_desc %></p>
+                                  <% var price = product[i].product_price %>
+                                  <p><%= price %></p>
+                                      Quantity: <input type ="text" name="userqty" id="qty">            
+                                  
+                          </div>
+                      </div>
+                      
+                      <div style="height:5%"></div>
+                  <% 
+              } %>
+              
+              
+              <input type="text" name="cust_name" value="Vrajpal" hidden />
+              <input type="text" name="cust_contact" value="12345567890" hidden />
+              <input type="text" name="remarks" value="testing" hidden />
+                
+                <center><button type="submit" class="raise" href="/userdetails">Place Order<i class="ti-shopping-cart-full ml-2"></i></button></center>
+              </form>
+                
+</body>
+
+</html>

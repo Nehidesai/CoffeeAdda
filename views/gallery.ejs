@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Coffee Adda</title>
+</head>
+
+<body>
+    <%- include('include/_header')%>
+  <!-- Header -->
+  <div class="text-box">
+    <h1 class="heading-primary">
+      <center><span class="heading-primary-main">PHOTO GALLERY</span></center>
+    </h1>
+  </div>
+  <!-- Photo Grid -->
+  <div class="rows">
+    <div class="gallery-column">
+  <% for(var i=0; i < gallery.length; i++) { %>
+    <% var gal=gallery[i].image %>
+    <img src="<%= gal %>" class="pics" style="width:400px;">
+          
+      <% } %>
+    </div>
+  </div>
+  <hr>
+  <%- include('include/_footer')%>
+</body>
+
+</html>

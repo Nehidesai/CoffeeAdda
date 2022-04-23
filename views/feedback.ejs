@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <title>Coffee Adda</title>
+    
+</head>
+
+<body>
+    <%- include('include/_header')%>
+    <div>
+        <h1 style="font-family: 'Charm', cursive;">
+            <center>Feedback</center>
+        </h1>
+        <hr>
+        <center>
+             <p style="font-family: 'Charm', cursive; font-size: 20px;">Kindly give us your valuable feedback.</p>
+        </center>
+    </div>
+    <form action="/feedback" method="POST">
+    <center>
+        <div class="fb-box">
+            <br><br>
+            <label style="font-family: 'Charm', cursive; font-size: 20px;">Name </label>
+            <input type="text" id="cust_name" name="cust_name">
+            <p style="font-family: 'Charm', cursive; font-size: 20px;">Would you like to add some comments?</p>
+            <textarea name="fb_desc" id="fb_desc" cols="50" rows="5">Add Your Text Here!</textarea><br><br>
+
+        </div>
+        <br><br>
+        <button class="raise">Submit Feedback</button>
+    </center>
+</form>
+    <br><br>
+    <%- include('include/_footer')%>
+</body>
+
+</html>

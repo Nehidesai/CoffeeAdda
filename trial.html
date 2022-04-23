@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">  
+        <style>
+            /* .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.coffee {
+  position: absolute;
+  top: 180px;
+  right: 140px;
+  color: #d7d7d7;
+	font-family:'Dancing Script', cursive;
+	font-size: 80px;
+	font-weight: 600;
+}
+
+.coffeetagline
+{
+    position: absolute;
+  top: 280px;
+  right: 140px;
+  color: #d7d7d7;
+	font-family:'Dancing Script', cursive;
+	font-size: 40px;
+	font-weight: 400;
+} */
+text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;  
+}
+
+.heading-primary {
+    color:#333;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+   /*  Animation decalaration   */
+    animation-name: moveInleft;
+    animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+        </style>
+    </head>
+    <body>
+        <!-- <div class="container">
+            <img src="PHOTOS/coffee6.jpg" style="height: 100%; width: 100%;">
+            <div class="coffee">The Coffee Adda</div>
+            <div class="coffeetagline">The finest coffees, shakes and snacks adda</div>
+        </div> -->
+
+        <div class="text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">wonderful</span>
+            <!-- <span class="heading-primary-sub">world wide web</span> -->
+          </h1>
+        </div>
+    </body>
+</html>

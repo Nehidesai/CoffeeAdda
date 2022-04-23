@@ -36,10 +36,10 @@
                   
                           </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <div class="menudetails" >
-                                  <h1><%= product[i].product_name %></h1>
-                                  <p><%= product[i].product_desc %></p>
+                                  <h1 name="product_name"><%= product[i].product_name %></h1>
+                                  <p name="product_desc"><%= product[i].product_desc %></p>
                                   <% var price = product[i].product_price %>
-                                  <p><%= price %></p>
+                                  <p name="product_price"><%= price %></p>
                                       Quantity: <input type ="text" name="userqty" id="qty">            
                                   
                           </div>

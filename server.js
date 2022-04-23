@@ -11,12 +11,6 @@ const mongoose = require('mongoose');
 const connectDB = require('./server/database/connection');
 const cors=require('cors');
 
-// const app=express();
-// var db = process.env.MONGO_URL
-// var port=process.env.PORT || 8081;
-//dotenv.config({path:'config.env'})
-//const PORT=process.env.PORT || 8080; //PORT in config.env=8081
-
 //log requests
 app.use(morgan('tiny'))
 app.use(cors)
@@ -28,7 +22,6 @@ app.use(bodyparser.json());
 
 //set view engine
 app.set("view engine","ejs")
-//app.set("view engine","html")
 
 //app.set("views",path.resolve(__dirname,"views/ejs"))
 
@@ -43,8 +36,6 @@ app.use('/js',express.static(path.resolve(__dirname,"adminResources/js")))
 app.use('/font',express.static(path.resolve(__dirname,"adminResources/fonts")))
 //load routers
 app.use('/',require('./server/routes/router'))
-//app.use('/admin',require('./server/routes/router'))
-
 
 app.listen(PORT,() => {console.log(`Server running on http://localhost:${PORT}`)});
 

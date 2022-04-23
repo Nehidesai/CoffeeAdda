@@ -9,7 +9,7 @@ const bodyparser=require('body-parser');
 const path=require('path');
 const mongoose = require('mongoose');
 const connectDB = require('./server/database/connection');
-
+const cors=require('cors');
 
 // const app=express();
 // var db = process.env.MONGO_URL
@@ -19,6 +19,7 @@ const connectDB = require('./server/database/connection');
 
 //log requests
 app.use(morgan('tiny'))
+app.use(cors)
 
 connectDB();
 //parse req to body parser

@@ -13,13 +13,7 @@ const services=require('../services/render');
 
 //ROUTES
 //Root Route with get method
-/**Changes */
-route.get('/home',services.homeRoutes);
-
-/**Original */
-//route.get('/',services.homeRoutes);
-
-
+route.get('/',services.homeRoutes);
 //route.get('/menu',services.menuRoutes);
 route.get('/contactus',services.contactusRoutes);
 //route.get('/gallery',services.galleryRoutes);

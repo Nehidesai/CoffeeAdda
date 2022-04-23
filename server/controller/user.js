@@ -12,14 +12,13 @@ exports.calculatebill = function(req,res) {
     console.log("User create body ",req.body)
     const qtys = req.body.userqty
     console.log(qtys)
-    const pr_name=req.body.product_name
+    
     Product.find()
     .then(products =>{
             for(let i = 0; i < products.length; i++)
             {
                 console.log(qtys[i])
                 if(qtys[i] != '')
-                    console.log("Product Names ",pr_name)
                     sum += parseInt(products[i].product_price) * parseInt(qtys[i])
             } 
             console.log("SUM=",sum)

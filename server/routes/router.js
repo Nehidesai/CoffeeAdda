@@ -14,20 +14,15 @@ const services=require('../services/render');
 //ROUTES
 //Root Route with get method
 route.get('/',services.homeRoutes);
-//route.get('/menu',services.menuRoutes);
-route.get('/contactus',services.contactusRoutes);
-//route.get('/gallery',services.galleryRoutes);
 
-//route.get('/order',services.OrderRoutes);
+route.get('/contactus',services.contactusRoutes);
+
 
 route.post('/order',order_controller.place_order);
 
 route.get('/feedback',services.feedbackRoutes);
 route.post('/feedback',feedback_controller.feedback_create);
 route.get('/feedback_find',feedback_controller.find);
-
-//route.post('/menu',feedback_controller.product_create);
-
 route.get('/menu',product_controller.findproduct);
 
 route.get('/userdetails',services.userRoutes);
@@ -48,33 +43,4 @@ route.post('/addmenu',product_controller.product_create);
 
 route.get('/admin_menu',services.adminMenuRoutes);
 
-
-
-//route.get('/addmenu',services.adminMenuRoutes)
-//route.get('/admin_gallery',services.adminGalleryRoutes);
-// route.get('/feedback_find',feedback_controller.find);
-
-// route.get('/admin',services.adminRoutes);
 module.exports=route;
-
-
-// route.get('/menu',(req,res)=>
-// {
-//   res.render('menu');
-// })
-
-// route.get('/contactus',(req,res)=>
-// {
-//   res.render('contactus');
-// })
-
-// route.get('/gallery',(req,res)=>
-// {
-//   res.render('gallery');
-// })
-
-// route.get('/feedback',(req,res)=>
-// {
-//   res.render('feedback');
-// })
-// */

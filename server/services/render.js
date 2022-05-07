@@ -37,18 +37,6 @@ exports.addGalleryRoutes=(req,res)=>
 }
 
 
-
-/*exports.menuRoutes=(req,res)=>
-{
-    axios.get('http://localhost:8081/menu_find')
-    .then(function(response){ 
-        res.render('menu',{product:response.data});
-    })
-    .catch(err =>{
-        res.send(err);
-    })
-}*/
-
 exports.menuRoutes=(req,res)=>
 {
     res.render('menu');
@@ -100,22 +88,7 @@ exports.thankyouRoutes=(req,res)=>
     res.render('thankyou')
 }
 
-/*exports.adminRoutes=(req,res)=>
-{
-    res.render('admin_feedback');
-}*/
-/*
-exports.adminRoutes=(req,res)=>
-{
-    axios.get('http://localhost:8081/feedback_find')
-    .then(function(response){ 
-        res.render('admin_feedback',{feedback:response.data});
-    })
-    .catch(err =>{
-        res.send(err);
-    }) 
-}
-*/
+
 exports.adminRoutes=(req,res)=>
 {
     res.render('admin_index');
